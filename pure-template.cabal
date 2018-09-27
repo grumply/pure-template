@@ -12,7 +12,6 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:
-      Main
       Pure.Template
 
   build-depends:
