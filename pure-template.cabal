@@ -16,8 +16,10 @@ library
 
   build-depends:
       base >=4.8
-    , interpolate >= 0.2
-    , haskell-src-meta >= 0.8
+    , pure-txt >= 0.7 && < 1
+    , pure-txt-interpolate >= 0.7 && < 1
+    , haskell-src-exts >= 1.18 && < 1.21
+    , haskell-src-meta >= 0.8 && < 0.9
     , template-haskell >= 2.13
 
   hs-source-dirs:      src
