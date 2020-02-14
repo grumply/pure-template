@@ -1,26 +1,30 @@
 name:                pure-template
-version:             0.7.0.0
+version:             0.8.0.0
 synopsis:            String interpolating template macros
-homepage:            github.com/grumply/pure-template
+homepage:            purehs.org/doc/pure-template
 license:             BSD3
 license-file:        LICENSE
-author:              Sean Mackenzie
-maintainer:          sean@grump.ly
+author:              Sean Hickman
+maintainer:          sean@grumply.com
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
+
+source-repository head
+  type: git
+  location: https://github.com/grumply/pure-template.git
 
 library
   exposed-modules:
       Pure.Template
 
   build-depends:
-      base >=4.8
-    , pure-txt >= 0.7 && < 1
-    , pure-txt-interpolate >= 0.7 && < 1
-    , haskell-src-exts >= 1.18 && < 1.21
-    , haskell-src-meta >= 0.8 && < 0.9
-    , template-haskell >= 2.13
+      base
+    , pure-txt
+    , pure-txt-interpolate
+    , haskell-src-exts
+    , haskell-src-meta
+    , template-haskell
 
   hs-source-dirs:      src
   default-language:    Haskell2010
